@@ -1263,7 +1263,9 @@ header .wrapper .open {
   }
 
   .blog .body-wrapper {
-    width: 100%;
+    width: calc(100% - 20px);
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .main-slider .main-slider__text {
@@ -1336,6 +1338,12 @@ header .wrapper .open {
     left: 20px;
   }
 
+  header .flex-container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   header .menu li {
     margin-left: 10px;
   }
@@ -1352,13 +1360,23 @@ header .wrapper .open {
     left: 142%;
   }
 
+  .blog .blog__header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .footer .footer__item {
     margin-right: 30px;
     width: 15%;
   }
 
   .footer .footer__item-button > div {
-    width: 98%;
+    width: 93%;
   }
 
   .footer .footer__item-button > div:after {
@@ -1443,8 +1461,22 @@ header .wrapper .open {
     left: 11px;
   }
 
+  .blog .body-wrapper {
+    margin-right: 0;
+    margin: 0 auto;
+  }
+
+  .blog .body-wrapper .wrapper {
+    width: 100%;
+  }
+
   .blog .blog__body {
     display: block;
+    margin: 0 auto;
+  }
+
+  .blog .blog__body .blog__body-item-wrapper {
+    margin-right: 0;
   }
 
   .blog .blog__body .blog__body-item {
@@ -1469,14 +1501,27 @@ header .wrapper .open {
     font-size: 22px;
   }
 
+  .question .wrapper {
+    text-align: center;
+  }
+
+  .question .question__form {
+    left: calc(50% - 368px);
+  }
+
   .footer .footer__item-button > div a {
     font-size: 10px;
   }
 }
 
 @media (max-width: 1140px) {
+  .fitness-slider .fitness-slider__show {
+    width: 100%;
+  }
+
   .fitness-slider .fitness-slider__show .img-wrapper {
-    max-width: 78%;
+    max-width: 94%;
+    margin: 0 auto;
   }
 
   .fitness-slider .fitness-slider__lupa {
@@ -1491,10 +1536,6 @@ header .wrapper .open {
     display: block;
   }
 
-  .fitness-slider .fitness-slider__show {
-    width: 100%;
-  }
-
   .fitness-slider .fitness-slider__description {
     margin-top: 200px;
   }
@@ -1506,7 +1547,7 @@ header .wrapper .open {
   .fitness-slider .fitness-slider__body-wrapper {
     position: absolute;
     bottom: 22%;
-    left: 0;
+    left: 2%;
   }
 
   .fitness-slider .fitness-slider__body-wrapper .fitness-slider__body-button {
@@ -1622,10 +1663,6 @@ header .wrapper .open {
     overflow: hidden;
   }
 
-  .question .question__form {
-    left: 2%;
-  }
-
   .footer .footer__item-wrapper {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1636,15 +1673,28 @@ header .wrapper .open {
     width: 25%;
     margin-top: 30px;
   }
+
+  .footer .footer__item-wrapper .footer__item-button > div {
+    width: 145px;
+  }
 }
 
 @media (max-width: 840px) {
   .question .wrapper {
     padding-left: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .question .wrapper img {
+    width: 100%;
   }
 
   .question .question__form {
     width: 60%;
+    left: 11%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .question .question__form .question__form-header {
@@ -1665,11 +1715,6 @@ header .wrapper .open {
 
   .fitness-slider__body-wrapper {
     display: none;
-  }
-
-  .fitness-slider .fitness-slider__show .img-wrapper {
-    max-height: 493px;
-    max-width: 78%;
   }
 
   .fitness-slider .fitness-slider__show .slick-arrow {
@@ -1714,6 +1759,10 @@ header .wrapper .open {
 
   .fitness-slider .fitness-slider__description {
     margin-top: 18px;
+  }
+
+  .footer .footer__item-wrapper {
+    padding-left: 18%;
   }
 
   .footer .footer__item-wrapper .footer__item {
@@ -1761,8 +1810,8 @@ header .wrapper .open {
 
   header .icons {
     top: 41px;
-    width: 300px;
-    right: -97px;
+    width: 168px;
+    right: 0px;
   }
 
   .main-slider .main-slider__body .slick-prev:before {
@@ -1793,15 +1842,20 @@ header .wrapper .open {
     display: block;
   }
 
+  .instagram .instagram-wrapper .instagram__body .instagram__body-item {
+    text-align: center;
+  }
+
   .instagram .instagram-wrapper .instagram__body img {
     width: 98%;
   }
 
   .instagram .instagram-wrapper .instagram__body-item:last-child {
-    width: calc(100% - 33px);
+    width: calc(98% - 20px);
     height: auto;
     padding-top: 10%;
     padding-bottom: 30%;
+    margin: 0 auto;
   }
 
   .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info-circle {
@@ -1962,7 +2016,7 @@ header .wrapper .open {
   .blog .blog__header-title:after {
     display: block;
     width: 29%;
-    top: 8px;
+    top: 11px;
     left: 203px;
   }
 
@@ -1990,6 +2044,10 @@ header .wrapper .open {
 
   .question .question__form button:after {
     display: none;
+  }
+
+  .question .question__form button {
+    width: 151px;
   }
 
   .footer {
@@ -2086,7 +2144,7 @@ header .wrapper .open {
 
 @media (max-width: 415px) {
   header .icons {
-    right: -189px;
+    width: 109px;
   }
 
   header .icons a {
