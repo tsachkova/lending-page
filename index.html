@@ -23,10 +23,10 @@
     <header>
     <div class="wrapper flex-container">
         <div class="header__logo">
-            <img src="img/logo.png" alt="" width="96" height="86">
+            <img src="img/logo.svg" alt="" width="96" height="86">
         </div>
         <img class="menu__button" src="./img/menu.png" alt="" width="30" height="20">
-        <ul class="menu ">
+        <ul class="menu">
             <li><a href="#">В магазин</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Информация</a></li>
@@ -42,10 +42,10 @@
             </li>
         </ul>
         <div class="icons">
-            <a class="lupa" href="#"></a>
-            <a class="teresa" href="#"></a>
-            <a class="heart" href="#"><span>10</span></a>
-            <a class="man" href="#"></a>
+            <i class="lupa"></i>
+            <i class="teresa"></i>
+            <i class="heart"><span>10</span></i>
+            <i class="man"></i>
         </div>
     </div>
 </header>
@@ -56,26 +56,24 @@
             <div class="main-slider__text-header">Керамика <br>для ваших идей</div>
             <div class="main-slider__text-description">Лучшие европейские коллекции керамики и керамогранита</div>
             <div class="main-slider__text-icons">
-                <p>
-                    <a href="#">
-                        <img src="./img/fb.svg" alt="" width="32" height="32">
-                    </a>
-                </p>
-                <p>
-                    <a href="#">
-                        <img src="./img/instagram.svg" alt="" width="32" height="32">
-                    </a>
-                </p>
-                <p>
-                    <a href="#">
-                        <img src="./img/youtube.svg" alt="" width="32" height="32">
-                    </a>
-                </p>
-                <p>
-                    <a href="#">
-                        <img src="./img/pinterest.svg" alt="" width="32" height="32">
-                    </a>
-                </p>
+
+                <div>
+                    <img src="./img/fb.svg" alt="" width="32" height="32">
+                </div>
+
+
+                <div>
+                    <img src="./img/instagram.svg" alt="" width="32" height="32">
+                </div>
+
+                <div>
+                    <img src="./img/youtube.svg" alt="" width="32" height="32">
+                </div>
+
+                <div>
+                    <img src="./img/pinterest.svg" alt="" width="32" height="32">
+                </div>
+
                 <div class="main-slider__text-manage"></div>
             </div>
             <div class="main-slider__text-switch">
@@ -105,7 +103,7 @@
                 </div>
                 <div class="fitness-slider__item">
                     <div class="img-wrapper">
-                        <a href="./img/f-slide2-big.jpg" class="zoom ">
+                        <a href="./img/f-slide2-big.jpg" class="zoom">
                             <img class="fitness-slider__show-img" src="./img/f-slide2.jpg" alt="" width="327"
                                 height="245">
                         </a>
@@ -113,7 +111,7 @@
                 </div>
                 <div class=" fitness-slider__item">
                     <div class="img-wrapper">
-                        <a href="./img/f-slide3-big.jpg" class="zoom ">
+                        <a href="./img/f-slide3-big.jpg" class="zoom">
                             <img class="fitness-slider__show-img" src="./img/f-slide3.jpg" alt="" width="326"
                                 height="245">
                         </a>
@@ -121,7 +119,7 @@
                 </div>
                 <div class="fitness-slider__item">
                     <div class="img-wrapper">
-                        <a href="./img/f-slide-big.jpg" class="zoom ">
+                        <a href="./img/f-slide-big.jpg" class="zoom">
                             <img class="fitness-slider__show-img" src="./img/f-slide.jpg" alt="" width="327"
                                 height="245">
                         </a>
@@ -129,7 +127,7 @@
                 </div>
                 <div class="fitness-slider__item">
                     <div class="img-wrapper">
-                        <a href="./img/f-slide2-big.jpg" class="zoom ">
+                        <a href="./img/f-slide2-big.jpg" class="zoom">
                             <img class="fitness-slider__show-img" src="./img/f-slide2.jpg" alt="" width="327"
                                 height="245">
                         </a>
@@ -137,7 +135,7 @@
                 </div>
                 <div class=" fitness-slider__item">
                     <div class="img-wrapper">
-                        <a href="./img/f-slide3-big.jpg" class="zoom ">
+                        <a href="./img/f-slide3-big.jpg" class="zoom">
                             <img class="fitness-slider__show-img" src="./img/f-slide3.jpg" alt="" width="326"
                                 height="245">
                         </a>
@@ -186,124 +184,140 @@
                     <a href="#">перейти в блог</a>
                 </div>
             </div>
-            <div class="blog__body flex-container">
-                <div class="blog__body-item-wrapper">
-                    <div class="blog__body-item">
-                        <img src="./img/article.jpg" alt="" width="380" height="325">
-                        <div class="item-text-wrapper">
-                            <div class="blog__body-item-info flex-container">
-                                <div>
-                                    <a href="#" class="news">НОВОСТЬ</a>
+            <div class="blog__body-wrapper">
+                <div class="blog__body ">
+                    <div class="blog__slide">
+                        <div class="blog__body-item-wrapper">
+                            <div class="blog__body-item">
+                                <img src="./img/article.jpg" alt="" width="380" height="325">
+                                <div class="item-text-wrapper">
+                                    <div class="blog__body-item-info flex-container">
+                                        <div>
+                                            <a href="#" class="news">НОВОСТЬ</a>
+                                        </div>
+                                        <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
+                                    </div>
+                                    <div class="blog__body-item-info-text">
+                                        <a href="#">Приглашаем посетить выставку Cevisama 2020</a>
+                                    </div>
+                                    <div class="blog__body-item-icons">
+                                        <span class="viewing">569</span>
+                                        <span class="coment">21</span>
+                                    </div>
                                 </div>
-                                <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
-                            </div>
-                            <div class="blog__body-item-info-text">
-                                <a href="#">Приглашаем посетить выставку Cevisama 2020</a>
-                            </div>
-                            <div class="blog__body-item-icons">
-                                <span class="viewing">569</span>
-                                <span class="coment">21</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="blog__body-item-wrapper">
-                    <div class="blog__body-item">
-                        <img src="./img/article2.jpg" alt="" width="380" height="325">
-                        <div class="item-text-wrapper">
-                            <div class="blog__body-item-info flex-container">
-                                <div>
-                                    <a href="#" class="article">Статья</a>
+                    <div class="blog__slide">
+                        <div class="blog__body-item-wrapper">
+                            <div class="blog__body-item">
+                                <img src="./img/article2.jpg" alt="" width="380" height="325">
+                                <div class="item-text-wrapper">
+                                    <div class="blog__body-item-info flex-container">
+                                        <div>
+                                            <a href="#" class="article">Статья</a>
+                                        </div>
+                                        <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
+                                    </div>
+                                    <div class="blog__body-item-info-text"><a href="#">Как правильно выбирать
+                                            керамическую
+                                            плитку</a></div>
+                                    <div class="blog__body-item-icons">
+                                        <span class="viewing">569</span>
+                                        <span class="coment">21</span>
+                                    </div>
                                 </div>
-                                <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
-                            </div>
-                            <div class="blog__body-item-info-text"><a href="#">Как правильно выбирать керамическую
-                                    плитку</a></div>
-                            <div class="blog__body-item-icons">
-                                <span class="viewing">569</span>
-                                <span class="coment">21</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="blog__body-item-wrapper">
-                    <div class="blog__body-item">
-                        <img src="./img/article3.jpg" alt="" width="380" height="325">
-                        <div class="item-text-wrapper">
-                            <div class="blog__body-item-info flex-container">
-                                <div>
-                                    <a href="#" class="article">Статья</a>
+                    <div class="blog__slide">
+                        <div class="blog__body-item-wrapper">
+                            <div class="blog__body-item">
+                                <img src="./img/article3.jpg" alt="" width="380" height="325">
+                                <div class="item-text-wrapper">
+                                    <div class="blog__body-item-info flex-container">
+                                        <div>
+                                            <a href="#" class="article">Статья</a>
+                                        </div>
+                                        <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
+                                    </div>
+                                    <div class="blog__body-item-info-text"><a href="#">Керамогранит. Виды и
+                                            применение.Заголовок
+                                            в две с...
+                                        </a>
+                                    </div>
+                                    <div class="blog__body-item-icons">
+                                        <span class="viewing">569</span>
+                                        <span class="coment">21</span>
+                                    </div>
                                 </div>
-                                <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
-                            </div>
-                            <div class="blog__body-item-info-text"><a href="#">Керамогранит. Виды и применение.Заголовок
-                                    в две с...
-                                </a>
-                            </div>
-                            <div class="blog__body-item-icons">
-                                <span class="viewing">569</span>
-                                <span class="coment">21</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="blog__body-item-wrapper">
-                    <div class="blog__body-item">
-                        <img src="./img/article4.jpg" alt="" width="380" height="325">
-                        <div class="item-text-wrapper">
-                            <div class="blog__body-item-info flex-container">
-                                <div>
-                                    <a href="#" class="news">НОВОСТЬ</a>
+                    <div class="blog__slide">
+                        <div class="blog__body-item-wrapper">
+                            <div class="blog__body-item">
+                                <img src="./img/article4.jpg" alt="" width="380" height="325">
+                                <div class="item-text-wrapper">
+                                    <div class="blog__body-item-info flex-container">
+                                        <div>
+                                            <a href="#" class="news">НОВОСТЬ</a>
+                                        </div>
+                                        <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
+                                    </div>
+                                    <div class="blog__body-item-info-text">
+                                        <a href="#">Приглашаем посетить выставку Cevisama 2020</a>
+                                    </div>
+                                    <div class="blog__body-item-icons">
+                                        <span class="viewing">569</span>
+                                        <span class="coment">21</span>
+                                    </div>
                                 </div>
-                                <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
-                            </div>
-                            <div class="blog__body-item-info-text">
-                                <a href="#">Приглашаем посетить выставку Cevisama 2020</a>
-                            </div>
-                            <div class="blog__body-item-icons">
-                                <span class="viewing">569</span>
-                                <span class="coment">21</span>
                             </div>
                         </div>
                     </div>
+                    <div class="blog__slide">
+                        <div class="blog__body-item-wrapper">
+                            <div class="blog__body-item">
+                                <img src="./img/article5.jpg" alt="" width="380" height="325">
+                                <div class="item-text-wrapper">
+                                    <div class="blog__body-item-info flex-container">
+                                        <div>
+                                            <a href="#" class="article">Статья</a>
+                                        </div>
+                                        <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
+                                    </div>
+                                    <div class="blog__body-item-info-text"><a href="#">Керамогранит. Виды и применение.
+                                            Заголовок в две с...
+                                        </a>
+                                    </div>
+                                    <div class="blog__body-item-icons">
+                                        <span class="viewing">569</span>
+                                        <span class="coment">21</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__slide">
+                        <div class="blog__body-item-wrapper">
+                            <div class="blog__body-item">
+                                <img src="./img/article6.jpg" alt="" width="380" height="325">
+                                <div class="blog__body-item-info flex-container">
+                                    <div class="item-text-wrapper">
+                                        <div>
+                                            <a href="#" class="article">Статья</a>
+                                        </div>
+                                        <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
 
-                </div>
-                <div class="blog__body-item-wrapper">
-                    <div class="blog__body-item">
-                        <img src="./img/article5.jpg" alt="" width="380" height="325">
-                        <div class="item-text-wrapper">
-                            <div class="blog__body-item-info flex-container">
-                                <div>
-                                    <a href="#" class="article">Статья</a>
-                                </div>
-                                <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
-                            </div>
-                            <div class="blog__body-item-info-text"><a href="#">Керамогранит. Виды и применение.
-                                    Заголовок в две с...
-                                </a>
-                            </div>
-                            <div class="blog__body-item-icons">
-                                <span class="viewing">569</span>
-                                <span class="coment">21</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog__body-item-wrapper">
-                    <div class="blog__body-item">
-                        <img src="./img/article6.jpg" alt="" width="380" height="325">
-                        <div class="blog__body-item-info flex-container">
-                            <div class="item-text-wrapper">
-                                <div>
-                                    <a href="#" class="article">Статья</a>
-                                </div>
-                                <div class="blog__body-item-info-date">10 АПРЕЛЯ 2020</div>
-
-                                <div class="blog__body-item-info-text"><a href="#">Как правильно выбирать керамическую
-                                        плитку</a></div>
-                                <div class="blog__body-item-icons">
-                                    <span class="viewing"> 569</span>
-                                    <span class="coment"> 21</span>
+                                        <div class="blog__body-item-info-text"><a href="#">Как правильно выбирать
+                                                керамическую
+                                                плитку</a></div>
+                                        <div class="blog__body-item-icons">
+                                            <span class="viewing"> 569</span>
+                                            <span class="coment"> 21</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -362,20 +376,20 @@
     </div>
 </div>
     <div class="footer">
-    <div class="wrapper ">
+    <div class="wrapper">
         <div class="flex-container footer__item-wrapper">
             <div class="footer__item footer__item-logo">
-                <img src="./img/footer-logo.png" alt="" width="126" height="114">
+                <img src="./img/footer-logo.svg" alt="" width="126" height="114">
                 <div class="item-logo-icons">
-                    <a href="#">
+                    <span>
                         <img src="./img/fb.svg" alt="" width="32" height="32">
-                    </a>
-                    <a href="#">
+                    </span>
+                    <span>
                         <img src="./img/instagram.svg" alt="" width="32" height="32">
-                    </a>
-                    <a href="#">
+                    </span>
+                    <span>
                         <img src="./img/youtube.svg" alt="" width="32" height="32">
-                    </a>
+                    </span>
                 </div>
                 <img class="footer__button" src="./img/menu.png" alt="" width="30" height="20">
             </div>
@@ -393,18 +407,18 @@
             </div>
             <div class="footer__item footer__item-brend">
                 <div class="footer__item-header">Бренды</div>
-                <p>Stone Sour</p>
-                <p>Pattern Rock</p>
+                <p><a href="#">Stone Sour</a></p>
+                <p><a href="#">Pattern Rock</a></p>
             </div>
             <div class="footer__item footer__item-contact">
                 <div>
                     <div class="footer__item-header">Отдел кадров</div>
-                    <p>ok@ceramica.ua</p>
-                    <p>+38 050-985-64-25</p>
+                    <p><a href="#">ok@ceramica.ua</a></p>
+                    <p><a href="#">+38 050-985-64-25</a></p>
                 </div>
                 <div>
                     <div class="footer__item-header">Торговый дом</div>
-                    <p>sales@ceramica.ua</p>
+                    <p><a href="#">sales@ceramica.ua</a></p>
                 </div>
             </div>
             <div class="footer__item footer__item-contact-administration">
@@ -415,7 +429,7 @@
                     <li><a href="#">+38 (056) 547-32-33</a></li>
                 </ul>
                 <div class="footer__item-header">Отдел маркетинга</div>
-                <p>marketing@ceramica.ua</p>
+                <p><a href="#">marketing@ceramica.ua</a></p>
             </div>
             <div class="footer__item footer__item-button">
                 <div class="see"><a href="#">смотреть КАТАЛОГ</a></div>
@@ -431,7 +445,7 @@
             </div>
             <div class="artjoker flex-container">
                 Разработка и поддержка сайта -
-                <img src="./img/artjoker.png" alt="" width="51" height="16">
+                <img src="./img/artjoker.svg" alt="" width="51" height="16">
             </div>
         </div>
     </div>
