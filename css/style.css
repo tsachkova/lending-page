@@ -526,7 +526,8 @@ header .wrapper .open {
 }
 
 .fitness-slider__show .img-wrapper a {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .fitness-slider__show .fitness-slider__show-img {
@@ -885,19 +886,21 @@ header .wrapper .open {
 }
 
 .instagram .instagram__body-item {
-  padding: 10px;
+  margin: 0px 10px 20px 10px;
 }
 
 .instagram .instagram__body-info {
-  width: 280px;
-  height: 280px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 69px;
+  width: 100%;
+  min-width: 280px;
+  height: 100%;
   background-color: #fff;
-  padding: 0;
-  margin: 10px;
 }
 
 .instagram .instagram__body-info-circle {
-  margin: 69px auto 15px;
+  margin: auto;
   height: 50px;
   width: 50px;
   background-color: #40474E;
@@ -907,14 +910,13 @@ header .wrapper .open {
 
 .instagram .instagram__body-info-circle img {
   position: absolute;
-  top: 8px;
-  left: 9px;
+  top: 0px;
+  left: 11px;
 }
 
 .instagram .instagram__body-info-name {
   text-align: center;
-  margin-bottom: 17px;
-  margin-top: 21px;
+  margin-top: 17px;
 }
 
 .instagram .instagram__body-info-button {
@@ -924,6 +926,7 @@ header .wrapper .open {
   text-align: center;
   background-color: #6B97BB;
   margin: auto;
+  margin-top: 19px;
 }
 
 .instagram .instagram__body-info-button a {
@@ -944,6 +947,7 @@ header .wrapper .open {
   padding-bottom: 111px;
   background-color: #F9F9FA;
   position: relative;
+  overflow: hidden;
 }
 
 .question .question__form {
@@ -1934,31 +1938,34 @@ header .wrapper .open {
   }
 
   .instagram .instagram-wrapper .instagram__body-item:last-child {
-    width: calc(98% - 20px);
-    height: auto;
-    padding-top: 10%;
-    padding-bottom: 30%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    width: calc(100% - 20px);
+  }
+
+  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info {
+    min-width: none;
+    width: 98%;
     margin: 0 auto;
   }
 
-  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info-circle {
+  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info .instagram__body-info-circle {
     height: 100px;
     width: 100px;
   }
 
-  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info-circle img {
-    top: 8px;
-    left: 9px;
+  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info .instagram__body-info-circle img {
+    left: 18px;
     width: 65%;
   }
 
-  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info-name {
+  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info .instagram__body-info-name {
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
 
-  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info-button {
+  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info .instagram__body-info-button {
     width: 249px;
   }
 
@@ -1979,6 +1986,10 @@ header .wrapper .open {
     margin: 0 auto;
     padding: 10% 6%;
     width: 85%;
+  }
+
+  .question .wrapper .question__form:after {
+    display: none;
   }
 
   .fitness-slider .fitness-slider__header:after {
@@ -2150,6 +2161,33 @@ header .wrapper .open {
     padding-top: 15px;
   }
 
+  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info {
+    padding-top: 46px;
+  }
+
+  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info .instagram__body-info-circle {
+    height: 70px;
+    width: 70px;
+  }
+
+  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info .instagram__body-info-circle img {
+    left: 13px;
+  }
+
+  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info .instagram__body-info-name {
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info .instagram__body-info-button {
+    width: 176px;
+  }
+
+  .instagram .instagram-wrapper .instagram__body-item:last-child .instagram__body-info .instagram__body-info-button a {
+    font-size: 12px;
+  }
+
   .footer {
     padding-top: 54px;
   }
@@ -2248,6 +2286,7 @@ header .wrapper .open {
     display: -ms-flexbox;
     display: flex;
     width: 109px;
+    top: 10px;
   }
 
   header .icons div {
