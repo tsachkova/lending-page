@@ -42,10 +42,6 @@ i:before {
   justify-items: flex-start;
 }
 
-.test a {
-  display: inline-block;
-}
-
 @font-face {
   font-family: "icomoon";
   src: url("./../fonts/icomoon.woff") format("woff");
@@ -1096,6 +1092,7 @@ header .wrapper .open {
   -webkit-transform: rotate(15deg);
   -ms-transform: rotate(15deg);
   transform: rotate(15deg);
+  pointer-events: none;
 }
 
 .footer {
